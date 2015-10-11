@@ -64,8 +64,10 @@ public class ComplexCalculator {
 
 
 	private static Complex readComplex() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		double real = readDouble ("Parte real?");
+		double imag = readDouble ("Parte imaginária?");
+		return new Complex (real, imag);
 	}
 
 }
