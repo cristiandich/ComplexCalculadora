@@ -42,23 +42,26 @@ public class ComplexCalculator {
 
 	//definição de subprogramas
 
-	private static void printf(String string, String string2) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
-
-	private static void readChar(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
 
 	private static int menu() {
-		// TODO Auto-generated method stub
-		return 0;
+		int op;
+		clear ();
+		printf ("1 - Ler o primeiro complexo\n");
+		printf ("2 - Ler o segundo complexo\n");
+		printf ("3 - somar os complexo\n");
+		printf ("4 - subtrair os complexos\n");
+		printf ("5 - multiplicar os complexos\n");
+		printf ("6 - dividir os complexos\n");
+		printf ("0 - sair do programa\n");
+do
+{
+	op = readInt ("opção?");
+	
+}while (op < 0)|| (op > 6);
+		return op;
+	}
+
+}
 	}
 
 
